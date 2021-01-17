@@ -1,5 +1,10 @@
-$color: green;
+// Imported SCSS Files //
 
-h1 {
-  color: green;
-}
+@import "presets";
+@import "variables";
+@import "typography";
+@import "header";
+@import "hero";
+@import "featured";
+@import "grid";
+@import "footer";
