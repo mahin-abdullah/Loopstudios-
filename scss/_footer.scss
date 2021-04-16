@@ -37,9 +37,34 @@ footer {
       text-align: center;
       font-size: 1.7em;
     }
+
+    & a:hover:after {
+      content: "";
+      margin: 0.6em auto 0 auto;
+      display: block;
+      width: 50%;
+      height: 3px;
+      background-color: $white;
+      animation: move 350ms ease-in-out 1;
+    }
+
+    @keyframes move {
+      0% {
+        width: 0%;
+      }
+
+      50% {
+        width: 25%;
+      }
+
+      100% {
+        width: 50%;
+      }
+    }
   }
 
   .attribution {
     text-align: center;
+    margin: 2em 0 0 0;
   }
 }
