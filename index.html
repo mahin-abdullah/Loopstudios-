@@ -4,47 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loopstudios landing page</title>
+  <!-- Main Stylesheets -->
+  <link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 <body>
   <!-- Header -->
   <header>
-    <div class="container">
-      <!-- Navigation -->
-      <nav>
+    <nav>
+      <div class="nav__list hide-for-mobile">
         <div class="logo">
-          <img src="dist/images/logo.svg" alt="Loopstudios">
+          <img src="dist/images/logo.svg" alt="">
+        </div>
+    
+        <div class="nav__links">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+
+      
+
+      <div class="mobile__menu hide-for-desktop">
+        <div class="logo">
+          <img src="dist/images/logo.svg" alt="">
         </div>
 
-        <div class="nav__list">
-          <ul class="nav__list--flex">
-            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Careers</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Events</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Products</a></li>
-            <li class="nav__item"><a class="nav__link" href="#">Support</a></li>
-          </ul>
-        </div>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
 
-        <label for="nav-toggle" class="nav-toggle-label">
-          <span></span>
-        </label>
-      </nav>  
+        <div class="nav__links--mobile sr-text">
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="hero__wrapper container">
+        <div class="hero__text">
+          <h1>Immersive experiences that deliver</h1>
+        </div>
+      </div>
     </div>
   </header>
-  <!-- End of Header -->
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <div class="container">
-      <h1 class="hero__title">Immersive experiences that deliver</h1>
-    </div>
-  </div>
+  
+
+
 
   <!-- Featured Section -->
-  <div class="featured__section">
+  <section class="featured">
     <div class="container">
-      <div class="featured__img">
-        <img src="dist/images/mobile/image-hero.jpg" alt="hero image">
+      <div class="description__img">
+        <img src="dist/images/mobile/image-interactive.jpg" alt="hero image">
       </div>
 
       <div class="featured__content">
@@ -55,7 +73,7 @@
           to their brand.</p>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Grid Section -->
   <div class="container">
@@ -129,22 +147,24 @@
   <footer>
     <div class="container">
       <ul class="footer__list">
-        <li class="footer__list"><a class="footer__link" href="#">About</a></li>
-        <li class="footer__list"><a class="footer__link" href="#">Careers</a></li>
-        <li class="footer__list"><a class="footer__link" href="#">Events</a></li>
-        <li class="footer__list"><a class="footer__link" href="#">Products</a></li>
-        <li class="footer__list"><a class="footer__link" href="#">Support</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Support</a></li>
       </ul>
 
       <ul class="footer__icons">
-        <li class="footer__icons--list"><a class="footer__icons--link" href="#"><i class="fab fa-facebook-square"></i></a></li>
-        <li class="footer__icons--list"><a class="footer__icons--link" href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
-        <li class="footer__icons--list"><a class="footer__icons--link" href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
-        <li class="footer__icons--list"><a class="footer__icons--link" href="#"><i class="fab fa-pinterest fa-lg"></i></a></li>
+        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+        <li ><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+        <li ><a href="#"><i class="fab fa-pinterest fa-lg"></i></a></li>
       </ul>
     </div>
   </footer>
   <!-- Script Files -->
+  <script src="dist/js/script.js"></script>
+
   <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
   <!-- End of Script Files -->
 </body>

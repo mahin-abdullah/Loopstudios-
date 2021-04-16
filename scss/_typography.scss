@@ -1,0 +1,24 @@
+// Typography //
+
+// Imported Fonts //
+
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+// Fonts //
+
+$font-primary: "Alata", sans-serif;
+$font-secondary: "Josefin Sans", sans-serif;
+
+// Font Sizes //
+
+// Font Selections //
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  font-weight: 600;
+}

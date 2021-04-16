@@ -1,0 +1,14 @@
+.hero {
+  overflow: hidden;
+  &__wrapper {
+    margin: 12em auto;
+  }
+
+  &__text {
+    font-size: 24px;
+    padding: 0.7em 1.3em;
+    text-align: start;
+    color: $white;
+    border: 2px solid $white;
+  }
+}
