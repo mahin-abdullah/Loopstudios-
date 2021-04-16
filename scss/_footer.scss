@@ -1,0 +1,45 @@
+footer {
+  background-color: $black;
+  padding: 3em 0;
+  margin: 7em 0 0 0;
+
+  .footer__list {
+    font-size: 18px;
+    text-align: center;
+
+    & .logo {
+      margin: 1em 0 2em 0;
+    }
+
+    & li {
+      margin: 0.8em 0;
+      font-family: $font-primary;
+    }
+
+    & a {
+      color: $white;
+    }
+  }
+
+  .footer__icons {
+    display: flex;
+
+    justify-content: center;
+    margin: 2em 0 0 0;
+
+    & li {
+      list-style: none;
+    }
+
+    & .fa-lg {
+      color: $white;
+      width: 2em;
+      text-align: center;
+      font-size: 1.7em;
+    }
+  }
+
+  .attribution {
+    text-align: center;
+  }
+}
