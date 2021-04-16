@@ -20,5 +20,14 @@ h5,
 h6 {
   font-family: $font-secondary;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+p {
+  font-family: $font-primary;
+  color: $gray;
 }

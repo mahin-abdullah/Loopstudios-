@@ -2,10 +2,12 @@ header {
   background-image: url(/dist/images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
+  filter: grayscale(27%);
+  overflow: hidden;
 
   nav {
-    padding: 2em 0 0 0;
+    padding: 1.3em 0 0 0;
   }
 }
 
@@ -14,6 +16,7 @@ header {
   display: block;
   cursor: pointer;
   width: 42px;
+  z-index: 1000;
 
   appearance: none;
   background: none;
@@ -45,10 +48,70 @@ header {
   }
 }
 
-.mobile__menu {
+.overlay {
   display: flex;
   align-items: flex-end;
   width: 90%;
   margin: 0 auto;
   justify-content: space-between;
+
+  .logo {
+    z-index: 1000;
+  }
+
+  .mobile__nav {
+    font-family: $font-secondary;
+    position: fixed;
+    display: block;
+    z-index: 999;
+    background-color: $black;
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    left: 100%;
+    transition: 400ms;
+
+    &.is-active {
+      left: 0;
+    }
+
+    & li {
+      text-transform: uppercase;
+      margin: 3em auto 0 auto;
+      text-align: center;
+    }
+
+    & li:first-child {
+      margin: 12.5em 0 0 0;
+    }
+
+    & a {
+      color: $white;
+      font-size: 24px;
+    }
+
+    & a:hover:after {
+      content: "";
+      margin: 0.2em auto 0 auto;
+      display: block;
+      width: 17%;
+      height: 2px;
+      background-color: $white;
+      animation: underline 350ms ease-in-out 1;
+    }
+
+    @keyframes underline {
+      0% {
+        width: 0%;
+      }
+
+      50% {
+        width: 10%;
+      }
+
+      100% {
+        width: 17%;
+      }
+    }
+  }
 }
