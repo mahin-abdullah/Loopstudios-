@@ -13,3 +13,13 @@
     line-height: 1;
   }
 }
+
+@media (min-width: 1440px) {
+  .hero__text {
+    width: 70%;
+
+    & h1 {
+      font-size: 65px;
+    }
+  }
+}
