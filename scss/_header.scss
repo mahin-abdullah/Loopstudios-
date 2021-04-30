@@ -94,7 +94,7 @@ header {
       content: "";
       margin: 0.2em auto 0 auto;
       display: block;
-      width: 17%;
+      width: 10%;
       height: 2px;
       background-color: $white;
       animation: underline 350ms ease-in-out 1;
@@ -106,11 +106,11 @@ header {
       }
 
       50% {
-        width: 10%;
+        width: 5%;
       }
 
       100% {
-        width: 17%;
+        width: 10%;
       }
     }
   }
