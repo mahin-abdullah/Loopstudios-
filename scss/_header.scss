@@ -124,19 +124,19 @@ header {
   .nav__list {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 87%;
     margin: 2em auto 0 auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 
     .logo {
-      width: 20%;
+      width: 23%;
     }
 
     .nav__links {
       list-style-type: none;
       position: relative;
-      width: 30%;
+      width: 40%;
       display: flex;
       justify-content: right;
 
@@ -150,16 +150,13 @@ header {
       & a:nth-child(6) {
         margin-right: 0;
       }
-
-      & a:hover:after {
-        content: "";
-        margin: 0.6em auto 0 auto;
-        display: block;
-        width: 100%;
-        height: 3px;
-        background-color: $white;
-        animation: animate 350ms ease-in-out 1;
-      }
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav__list {
+    justify-content: space-evenly;
+    width: 77%;
   }
 }
