@@ -129,11 +129,14 @@ header {
     justify-content: space-evenly;
     align-items: center;
 
+    .logo {
+      width: 20%;
+    }
+
     .nav__links {
       list-style-type: none;
       position: relative;
-      right: -2em;
-      width: 600px;
+      width: 30%;
       display: flex;
       justify-content: right;
 
